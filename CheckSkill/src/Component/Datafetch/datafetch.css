@@ -1,0 +1,49 @@
+/* DataFetch.module.css */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+  }
+  
+  .userList {
+    list-style-type: none;
+    padding: 10px 10px;
+    max-height: 400px; /* ขนาดสูงสุดของ list */
+    overflow-y: auto; /* ทำให้สามารถเลื่อนใน list ได้ */
+    border: 2px solid black;
+    border-radius: 1rem;
+  }
+  
+  .userItem {
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .userItem:last-child {
+    border-bottom: none;
+  }
+  
+  .userName {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .userInfo {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+
+  

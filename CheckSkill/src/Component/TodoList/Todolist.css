@@ -1,0 +1,104 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: "Arial", sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+  }
+  
+  /* กล่องหลักของ To-Do List */
+  .todo-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 350px;
+  }
+  
+  /* หัวข้อ */
+  h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* กล่องอินพุต */
+  .input-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-right: 1rem;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background: #2980b9;
+  }
+  
+  /* รายการ To-Do */
+  .todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .todo-list li:hover {
+    background: #eaeaea;
+  }
+  
+  /* สถานะ Progress */
+  .todo-list .progress {
+    color: #e67e22;
+  }
+  
+  /* สถานะ Done */
+  .todo-list .done {
+    color: #2ecc71;
+    text-decoration: line-through;
+  }
+  
+  /* ปุ่มลบ */
+  .todo-list button {
+    background: #ff9292;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .todo-list button:hover {
+    background: #c0392b;
+  }
+  
+
+  
