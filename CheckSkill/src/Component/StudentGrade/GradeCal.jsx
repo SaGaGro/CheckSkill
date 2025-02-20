@@ -60,7 +60,7 @@ function GradeCal({setPage}) {
       {gpa !== null && <h3>Your GPA: {gpa.toFixed(2)}</h3>}
       <div>
       <button className="btn_back" onClick={() => setPage("app")}>
-        ⬅ Back to App
+        Back to App
       </button>
       </div>
     </div>
