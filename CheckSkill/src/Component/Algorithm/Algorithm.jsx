@@ -14,7 +14,7 @@ function Algorithm({ setPage }) {
   const calculateArea = () => {
     const r = parseFloat(radius);
     if (isNaN(r) || r <= 0) {
-      alert("Please enter a valid radius");
+      alert("ใส่ค่ารัศมี");
       return;
     }
     const pi = 3.14;
