@@ -20,21 +20,25 @@ function Algorithm({ setPage }) {
     const pi = 3.14;
     setArea(pi * r * r);
   };
-
+  
   const handleAgeCheck = () => {
-    const a = parseInt(age);
-    if (isNaN(a) || a <= 0) {
-      alert("Please enter a valid age");
-      return;
-    }
-    if (a <= 12) {
-      setAgeCategory("เด็ก");
-    } else if (a <= 20) {
-      setAgeCategory("วัยรุ่น");
-    } else {
-      setAgeCategory("ผู้ใหญ่");
+    try {
+      const a = parseInt(age);
+      if (isNaN(a) || a <= 0) {
+        throw new Error("ใส่เลขให้มันถูก");
+      }
+      if (a <= 12) {
+        setAgeCategory("เด็ก");
+      } else if (a <= 19) {
+        setAgeCategory("วัยรุ่น");
+      } else {
+        setAgeCategory("ผู้ใหญ่");
+      }
+    } catch (error) {
+      alert(error.message);
     }
   };
+  
 
   const handleNumberCheck = () => {
     const num = parseInt(number);
@@ -84,7 +88,7 @@ function Algorithm({ setPage }) {
       <div>
         <h3>Check Age Category</h3>
         <input
-          type="number"
+          // type="number"
           value={age}
           onChange={(e) => setAge(e.target.value)}
           placeholder="Enter age"

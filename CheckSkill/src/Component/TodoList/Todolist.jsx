@@ -10,9 +10,7 @@ function Todolist({ setPage }) {
 
   // อัปเดต LocalStorage เมื่อ tasks มีการเปลี่ยนแปลง
   useEffect(() => {
-    if (tasks.length > 0) {
-      localStorage.setItem("tasks", JSON.stringify(tasks));
-    }
+    localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
 
   const addTask = () => {

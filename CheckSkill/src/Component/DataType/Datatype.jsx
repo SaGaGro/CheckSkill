@@ -65,7 +65,7 @@ const TupleandSet = () => {
 
 const handleJSONOperations = () => {
   clearConsole()
-  const student = { name: "Alice", age: 25, city: "New York" };
+  const student = { name: "Kunatip", age: 20, city: "Bangkok" };
   const jsonString = JSON.stringify(student);
   console.log("JSON String:", jsonString);
   
